@@ -27,6 +27,6 @@ class StudentGradeCalculator(MRJob):
         yield (name, list(grades)[0])
 
 if __name__ == '__main__':
-    # ✅ Disable logging messages
+    # Disable logging messages
     logging.getLogger().setLevel(logging.ERROR)
     StudentGradeCalculator.run()
