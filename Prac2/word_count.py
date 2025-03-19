@@ -21,6 +21,6 @@ class WordFrequencyCounter(MRJob):
         yield (word, sum(counts))
 
 if __name__ == '__main__':
-    # ✅ Disable logging messages
+    # Disable logging messages
     logging.getLogger().setLevel(logging.ERROR)
     WordFrequencyCounter.run()
