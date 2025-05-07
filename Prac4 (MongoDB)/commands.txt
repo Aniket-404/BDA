@@ -1,0 +1,41 @@
+create database:
+    use myDatabase
+
+Create collection:
+    db.createCollection("students")
+
+Insert One:
+    db.students.insertOne({ name: "Aniket", age: 22, course: "AIDS" })
+
+Insert Many:
+    db.students.insertMany([
+  { name: "Rajiv", age: 21, course: "AIDS" },
+  { name: "Shantanu", age: 23, course: "Comp" }
+])
+
+Show all documents:
+    db.students.find()
+
+Show specific document:
+    db.students.find({ name: "Aniket" })
+
+Update One Document:
+    db.students.updateOne({ name: "Aniket" }, { $set: { age: 23 } })
+
+Update many Document:
+    db.students.updateMany({ course: "AIDS" }, { $set: { feePaid: true } })
+
+Delete One Document:
+    db.students.deleteOne({ name: "Rajiv" })
+
+Delete Many Documnet:
+    db.students.deleteMany({ course: "AIDS" })
+
+Delect Collection:
+    db.students.drop()
+
+Drop Database:
+    db.dropDatabase()
+
+Show Databases:
+    show dbs
