@@ -1,5 +1,0 @@
-Alice 85
-Bob 73
-Charlie 92
-David 60
-Emma 45
