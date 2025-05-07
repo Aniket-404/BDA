@@ -4,4 +4,4 @@ import sys
 for line in sys.stdin:
     line = line.strip().replace(" ", "")
     for char in line:
-        print("{0}\t1".format(char))
+        print("{0}\t1".format(char)) 

@@ -17,4 +17,4 @@ for line in sys.stdin:
         count = value
 
 if current_char:
-    print("{0}\t{1}".format(current_char, count))
+    print("{0}\t{1}".format(current_char, count)) 
